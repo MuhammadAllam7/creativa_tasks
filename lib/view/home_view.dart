@@ -1,4 +1,3 @@
-import 'package:creativa_tasks/view/cart_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -10,15 +9,8 @@ class HomeView extends StatelessWidget {
       appBar: AppBar(
         title: const Text('HomeView'),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => CartView(),
-            ));
-          },
-          child: const Text('Show Card'),
-        ),
+      body: const Center(
+        child: Text('HomeView'),
       ),
     );
   }
